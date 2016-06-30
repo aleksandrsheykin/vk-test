@@ -1,29 +1,27 @@
 <!DOCTYPE html>
-<!-- Подкasdfasdfasdfjqueryasdf -->
+<!-- ГЏГ®Г¤ГЄasdfasdfasdfjqueryasdf -->
 <html>
 <head>
-<!-- Подключаем jquery -->
+<!-- ГЏГ®Г¤ГЄГ«ГѕГ·Г ГҐГ¬ jquery -->
 <script src='http://code.jquery.com/jquery-1.7.1.js'></script>
-<!-- Подключаем VK-->
+<!-- ГЏГ®Г¤ГЄГ«ГѕГ·Г ГҐГ¬ VK-->
 <script src="http://vk.com/js/api/xd_connection.js?2" type="text/javascript"></script>
-<!-- Подключаем скрипт регулировки высоты-->
+<!-- ГЏГ®Г¤ГЄГ«ГѕГ·Г ГҐГ¬ Г±ГЄГ°ГЁГЇГІ Г°ГҐГЈГіГ«ГЁГ°Г®ГўГЄГЁ ГўГ»Г±Г®ГІГ»-->
 <script src="vk_height.js" type="text/javascript"></script>
-<!-- Скрипт получения фоток друзей и непосредственно их вывод-->
+<!-- Г‘ГЄГ°ГЁГЇГІ ГЇГ®Г«ГіГ·ГҐГ­ГЁГї ГґГ®ГІГ®ГЄ Г¤Г°ГіГ§ГҐГ© ГЁ Г­ГҐГЇГ®Г±Г°ГҐГ¤Г±ГІГўГҐГ­Г­Г® ГЁГµ ГўГ»ГўГ®Г¤-->
 <script>
-// Функция получения друзей и вывода их на экран
+// Г”ГіГ­ГЄГ¶ГЁГї ГЇГ®Г«ГіГ·ГҐГ­ГЁГї Г¤Г°ГіГ§ГҐГ© ГЁ ГўГ»ГўГ®Г¤Г  ГЁГµ Г­Г  ГЅГЄГ°Г Г­
 function doIt(){
         /*
-        VK.api('метод', {параметр: "значение"}, callback функция{
-        // работаем с полученными данными
+        VK.api('Г¬ГҐГІГ®Г¤', {ГЇГ Г°Г Г¬ГҐГІГ°: "Г§Г­Г Г·ГҐГ­ГЁГҐ"}, callback ГґГіГ­ГЄГ¶ГЁГї{
+        // Г°Г ГЎГ®ГІГ ГҐГ¬ Г± ГЇГ®Г«ГіГ·ГҐГ­Г­Г»Г¬ГЁ Г¤Г Г­Г­Г»Г¬ГЁ
         });
         */
 
 	VK.api("friends.get", {fields: "photo_medium"}, function(data) { 
-		// Действия с полученными данными 
+		// Г„ГҐГ©Г±ГІГўГЁГї Г± ГЇГ®Г«ГіГ·ГҐГ­Г­Г»Г¬ГЁ Г¤Г Г­Г­Г»Г¬ГЁ 
 		for(c=0;c<data.response.length;c++){
-			$("body").append("<img src='"+data.response[c].photo_medium+"'>
-
-");
+			$("body").append("<img src='"+data.response[c].photo_medium+"'>");
 		}
 	});
 }
