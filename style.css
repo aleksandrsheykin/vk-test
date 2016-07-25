@@ -1,0 +1,33 @@
+.btn-yes {
+	padding: 10px;
+	background: #449944;
+	float: left;
+	width: 80px;
+	margin: auto;
+}
+.btn-yes:hover {
+	background: #44AA44;
+}        
+.center {
+	text-align:center;
+	width:60%;
+	border:2px solid #fc0;
+	background:#fc0;
+	box-shadow:0 0 10pt #727272;
+	padding:10pt;
+	border-radius:4pt;
+	margin: auto;
+}
+.button{
+	margin:10pt;
+	padding:10pt;
+	border:2px solid #000;
+	border-radius:4pt;
+	width:80px;
+	display:inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.button:hover{
+	background: #E0B402;
+}
