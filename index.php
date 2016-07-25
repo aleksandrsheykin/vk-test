@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf8">
     <script src='http://code.jquery.com/jquery-1.7.1.js'></script>
     <script src="http://vk.com/js/api/xd_connection.js?2" type="text/javascript"></script>
     <script src="js.js" type="text/javascript"></script>
@@ -19,11 +20,10 @@
                     $("body").append("<img src='"+data.response[c].photo_medium+"'>");
                 }
             });                
-                
                 */
                 
             VK.init(function() { 
-                //alert('good');
+                alert('good');
                 VK.api("wall.post", {"message": "Hello!"}, function (data) {
                     alert("Post ID:" + data.response.post_id);
                 });
@@ -34,7 +34,7 @@
         }
         $(document).ready(function(){
             doIt();
-            //SetQuestion();
+            SetQuestion();
             
         });
     </script>
