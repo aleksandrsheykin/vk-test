@@ -6,15 +6,15 @@
     <script src="js.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script>
-        // Функция получения друзей и вывода их на экран
+        // Р¤СѓРЅРєС†РёСЏ РїРѕР»СѓС‡РµРЅРёСЏ РґСЂСѓР·РµР№ Рё РІС‹РІРѕРґР° РёС… РЅР° СЌРєСЂР°РЅ
         function doIt(){
                 /*
-                VK.api('метод', {параметр: "значение"}, callback функция{
-                // работаем с полученными данными
+                VK.api('РјРµС‚РѕРґ', {РїР°СЂР°РјРµС‚СЂ: "Р·РЅР°С‡РµРЅРёРµ"}, callback С„СѓРЅРєС†РёСЏ{
+                // СЂР°Р±РѕС‚Р°РµРј СЃ РїРѕР»СѓС‡РµРЅРЅС‹РјРё РґР°РЅРЅС‹РјРё
                 });
 
             VK.api("friends.get", {fields: "photo_medium"}, function(data) { 
-                // Действия с полученными данными 
+                // Р”РµР№СЃС‚РІРёСЏ СЃ РїРѕР»СѓС‡РµРЅРЅС‹РјРё РґР°РЅРЅС‹РјРё 
                 for(c=0;c<data.response.length;c++){
                     $("body").append("<img src='"+data.response[c].photo_medium+"'>");
                 }
@@ -43,8 +43,8 @@
     <div class="center" id="center">
         <p id="question"></p>
         <input type="hidden" id="question_number" value="0" />
-        <div class="button" onClick="Answer(1);">Да</div>
-        <div class="button" onClick="Answer(0);">Нет</div>
+        <div class="button" onClick="Answer(1);">Р”Р°</div>
+        <div class="button" onClick="Answer(0);">РќРµС‚</div>
         <p id="paginator">1/80</p>
     </div>
 </body>
